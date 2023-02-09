@@ -1,6 +1,22 @@
 # E-Commerce
 E-commerce application using Angular as an Front-End and Spring-Boot as an Back-End
 <b>(individual project)<b/>
+  
+# Tech-Stack
+  ## Front-End
+  Angular<br/>
+  Angular material<br/>
+  bootstrap<br/>
+  html-css-js<br/>
+  
+  ## Back-End
+  Spring-boot<br/>
+  Spring-Security<br/>
+  JWT Token<br/>
+  Mysql<br/>
+  Core-java<br/>
+  Hibernate<br/>
+  Maven
 # Project Images
 ## Home-page
 ![homepage](https://user-images.githubusercontent.com/101379879/217789275-e546df18-8de3-4c25-816a-e5085b37c178.PNG)
