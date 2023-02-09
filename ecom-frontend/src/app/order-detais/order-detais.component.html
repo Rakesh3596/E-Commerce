@@ -1,0 +1,39 @@
+<div class="container mt-5" >
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    
+    <!-- Position Column -->
+    <ng-container matColumnDef="Id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.orderId}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Product Name">
+        <th mat-header-cell *matHeaderCellDef> Product Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.product.productName}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.user.userFirstName}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Address">
+        <th mat-header-cell *matHeaderCellDef> Address </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderFullOrder}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Contact No">
+        <th mat-header-cell *matHeaderCellDef> Contact No </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderContactNumber}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Status">
+        <th mat-header-cell *matHeaderCellDef> Status </th>
+        <td mat-cell *matCellDef="let element"> {{element.orderStatus}} </td>
+      </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

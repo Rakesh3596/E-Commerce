@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Username</mat-label>
+                <input matInput ngModel name="userName" id="userName" placeholder="Username">
+                
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>First Name</mat-label>
+                <input matInput ngModel name="userFirstName" id="userFirstName" placeholder="First Name">
+                
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Last Name</mat-label>
+                <input matInput ngModel name="userLastName" id="userLastName" placeholder="Last Name">
+               
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-100">
+                <mat-label>Password</mat-label>
+                <input matInput ngModel name="userPassword" id="userPassword" placeholder="Password">
+                
+            </mat-form-field>
+
+            <div class="text-center">
+                <button type="submit" mat-raised-button color="primary">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
